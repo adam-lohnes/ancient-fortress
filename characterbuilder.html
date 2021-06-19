@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/character.css">
+  </head>
+  <body>
+    <header>
+      <h1>Build Your Character</h1>
+    </header>
+    <main>
+      <form id="character-options">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" value="name">
+        </p>
+        <!-- add options for difference races -->
+        <p>
+          <input type="radio" id="male" name="gender" value="male" checked>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="male">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="male">Other</label>
+          <!-- add additional specific gender options -->
+        </p>
+        <p>
+          <label for="height">Size:</label><br>
+          <input type="range" id="height" min="135" max="215" value="175"><br>
+          <label for="weight">Build:</label><br>
+          <input type="range" id="weight" min="35" max="110" value="65"><br>
+        </p>
+        <p>
+          <label for="stat-pts">Points Available:</label>
+          <input type="number" id="stat-pts" value="3"><br>
+          <label for="str">Strength:</label><br>
+          <input type="range" id="str" min="1" max="20" value="3"><br>
+          <label for="weight">Intelligence:</label><br>
+          <input type="range" id="int" min="1" max="20" value="3"><br>
+          <label for="height">Speed:</label><br>
+          <input type="range" id="agi" min="1" max="20" value="3"><br>
+          <label for="weight">Endurance:</label><br>
+          <input type="range" id="con" min="1" max="20" value="3"><br>
+        </p>
+        <p>
+          <label for="first-color">Favorite Color:</label>
+          <input type="color" id="first-color" value="#9f3f00"><br>
+          <label for="second-color">Next Favorite Color:</label>
+          <input type="color" id="second-color" value="#f3c699">
+        </p>
+        <button id="random-character">Random Character Build</button>
+      </form>
+      <div id="character-preview">
+        <button id="skin-color">Skin Color</button>
+        <button id="hair-color">Hair Color</button>
+        <button id="hair-style">Hair Style</button>
+        <button id="face-shape">Face Shape</button>
+        <button id="face-expression">Facial Expression</button>
+        <button id="face-hair">Facial Hair</button>
+        <canvas id="character-canvas" width="500" height="700" style="border: 1px solid black;"></canvas>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
