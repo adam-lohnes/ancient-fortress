@@ -1,3 +1,7 @@
 main {
   display: flex;
 }
+
+#character-canvas {
+  border: 1px solid black;
+}
