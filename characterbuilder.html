@@ -8,7 +8,7 @@
       <h1>Build Your Character</h1>
     </header>
     <main>
-      <form id="character-options">
+      <form id="character-stats">
         <p>
           <label for="name">Name:</label>
           <input type="text" id="name" value="name">
@@ -50,13 +50,14 @@
         <button id="random-character">Random Character Build</button>
       </form>
       <div id="character-preview">
-        <button id="skin-color">Skin Color</button>
-        <button id="hair-color">Hair Color</button>
-        <button id="hair-style">Hair Style</button>
-        <button id="face-shape">Face Shape</button>
-        <button id="face-expression">Facial Expression</button>
-        <button id="face-hair">Facial Hair</button>
-        <canvas id="character-canvas" width="500" height="700"></canvas>
+        <button id="skin-color" onclick="showPreviewOptions(skinColors)">Skin Color</button>
+        <button id="hair-color" onclick="showPreviewOptions(hairColors)">Hair Color</button><br>
+        <button id="hair-style" onclick="showPreviewOptions(hairStyles)">Hair Style</button>
+        <button id="face-shape" onclick="showPreviewOptions(faceShapes)">Face Shape</button>
+        <button id="face-expression" onclick="showPreviewOptions(expressions)">Facial Expression</button><br>
+        <button id="face-hair" onclick="showPreviewOptions(facialHairs)">Facial Hair</button>
+        <div id="character-options"></div>
+        <canvas id="character-canvas" width="400" height="600"></canvas>
       </div>
     </main>
     <footer>
