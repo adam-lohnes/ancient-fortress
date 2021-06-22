@@ -50,18 +50,19 @@
         <button id="random-character">Random Character Build</button>
       </form>
       <div id="character-preview">
-        <button id="skin-color" onclick="showPreviewOptions(skinColors)">Skin Color</button>
-        <button id="hair-color" onclick="showPreviewOptions(hairColors)">Hair Color</button><br>
-        <button id="hair-style" onclick="showPreviewOptions(hairStyles)">Hair Style</button>
-        <button id="face-shape" onclick="showPreviewOptions(faceShapes)">Face Shape</button>
-        <button id="face-expression" onclick="showPreviewOptions(expressions)">Facial Expression</button><br>
-        <button id="face-hair" onclick="showPreviewOptions(facialHairs)">Facial Hair</button>
+        <button id="skin-color" onclick="showPreviewOptions('skinColor')">Skin Color</button>
+        <button id="hair-color" onclick="showPreviewOptions('hairColor')">Hair Color</button><br>
+        <button id="hair-style" onclick="showPreviewOptions('hairStyle')">Hair Style</button>
+        <button id="face-shape" onclick="showPreviewOptions('faceShape')">Face Shape</button>
+        <button id="face-expression" onclick="showPreviewOptions('expression')">Facial Expression</button><br>
+        <button id="face-hair" onclick="showPreviewOptions('facialHair')">Facial Hair</button>
         <div id="character-options"></div>
         <canvas id="character-canvas" width="400" height="600"></canvas>
       </div>
     </main>
     <footer>
       <script src="js/character.js"></script>
+      <script src="js/characterCanvas.js"></script>
     </footer>
   </body>
 </html>
